@@ -1,5 +1,10 @@
 # ChangeLog
 
+### 24.03.01
+
++ require pymodbus >= 3.5.0
++ require sonnencharger >= 0.1.1
+
 ### 0.1.0
 
 + fix wrong units:

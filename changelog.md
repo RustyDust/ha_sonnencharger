@@ -1,5 +1,9 @@
 # ChangeLog
 
+### 24.03.02
+
++ require sonnencharger >= 0.1.2 (stupid me!)
+
 ### 24.03.01
 
 + require pymodbus >= 3.5.0

@@ -13,10 +13,10 @@ insert_final_newline = true
 [*.{js,py}]
 charset = utf-8
 
-# 4 space indentation
-[*.py]
+# 2 space indentation
+[*.{json,py}]
 indent_style = space
-indent_size = 2
+indent_size = 3
 
 # Tab indentation (no size specified)
 [Makefile]

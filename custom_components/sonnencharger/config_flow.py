@@ -12,7 +12,7 @@ from homeassistant.const import (
     CONF_SCAN_INTERVAL,
 )
 
-class SonnenchargerFlowHandler(config_entries.ConfigFlow,domain=DOMAIN):
+class SonnenchargerFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
   def __init__(self):
     self.data_schema = CONFIG_SCHEMA_A
 
@@ -37,7 +37,7 @@ class SonnenchargerFlowHandler(config_entries.ConfigFlow,domain=DOMAIN):
       return self._show_form({"base": "connection_error"})
 
     return self.async_create_entry(
-      # title = "SonnenCharger",
+      title = "SonnenCharger",
       data  = {
         CONF_IP_ADDRESS:    hostip,
         CONF_PORT:          hostport,

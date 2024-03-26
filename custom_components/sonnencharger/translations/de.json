@@ -31,5 +31,120 @@
                 }
             }
         }
+    },
+    "entity": {
+      "sensor": {
+         "connectors": {
+            "name": "Anzahl Konnektoren"
+         },
+         "hwrevision": {
+            "name": "Version der Hardware"
+         },
+         "model": {
+            "name": "Modell"
+         },
+         "serial": {
+            "name": "Seriennummer"
+         },
+         "swrevision": {
+            "name": "Version der Software"
+         },
+         "active_session_duration": {
+            "name": "Dauer der aktiven Sitzung"
+         },
+         "active_session_imported_energy": {
+            "name": "Bezogene Energie der aktiven Sitzung"
+         },
+         "ev_max_phase_current": {
+            "name": "Maximale Stromstärke je Phase des Fahrzeugs"
+         },
+         "ev_max_power": {
+            "name": "Maximale Ladeleistung des Fahrzeugs"
+         },
+         "ev_required_energy": {
+            "name": "Benötigte Energie des Fahrzeugs"
+         },
+         "l1_active_power": {
+            "name": "Aktuelle Ladeleistung L1"
+         },
+         "l1_current": {
+            "name": "Aktuelle Stromstärke L1"
+         },
+         "l1_ln_voltage": {
+            "name": "Aktuelle Spannung L1-N"
+         },
+         "l1_phase": {
+            "name": "Reale Phase L1"
+         },
+         "l2_active_power": {
+            "name": "Aktuelle Ladeleistung L2"
+         },
+         "l2_current": {
+            "name": "Aktuelle Stromstärke L2"
+         },
+         "l2_ln_voltage": {
+            "name": "Aktuelle Spannung L2-N"
+         },
+         "l2_phase": {
+            "name": "Reale Phase L2"
+         },
+         "l3_active_power": {
+            "name": "Aktuelle Ladeleistung L3"
+         },
+         "l3_current": {
+            "name": "Aktuelle Stromstärke L3"
+         },
+         "l3_ln_voltage": {
+            "name": "Aktuelle Spannung L3-N"
+         },
+         "l3_phase": {
+            "name": "Reale Phase L3"
+         },
+         "max_current": {
+            "name": "Maximal erlaubte Stromstärke"
+         },
+         "net_frequency": {
+            "name": "Netzfrequenz"
+         },
+         "num_phases": {
+            "name": "Anzahl Phasen"
+         },
+         "power_factor": {
+            "name": "Power Faktor"
+         },
+         "session_departure_time": {
+            "name": "Endzeitpunkt der Sitzung"
+         },
+         "session_id": {
+            "name": "Sitzungs-ID"
+         },
+         "state": {
+            "name": "Status"
+         },
+         "state_numeric": {
+            "name": "Numerischer Status"
+         },
+         "target_current": {
+            "name": "Ziel-Stromstärke"
+         },
+         "total_active_power": {
+            "name": "Gesamte Ladeleistung"
+         },
+         "type": {
+            "name": "Typ"
+         },
+         "type_numeric": {
+            "name": "numerischer Typ"
+         },
+         "vehicle_connected_phases": {
+            "name": "Mit dem Fahrzeug verbundene Phasen"
+         },
+         "vehicle_connected_phases_code": {
+            "name": "Mit dem Fahrzeug verbundene Phasen (Statuscode)"
+         },
+         "vehicle_connected_phases_numeric": {
+            "name": "Mit dem Fahrzeug verbundene Phasen (numerisch)"
+         }
+      }
     }
 }

@@ -30,5 +30,120 @@
                 }
             }
         }
+    },
+    "entity": {
+      "sensor": {
+         "connectors": {
+            "name": "Number of connectors"
+         },
+         "hwrevision": {
+            "name": "Hardware revision"
+         },
+         "model": {
+            "name": "Model"
+         },
+         "serial": {
+            "name": "Serial number"
+         },
+         "swrevision": {
+            "name": "Software version"
+         },
+         "active_session_duration": {
+            "name": "Duration of current session"
+         },
+         "active_session_imported_energy": {
+            "name": "Imported energy of current session"
+         },
+         "ev_max_phase_current": {
+            "name": "Maximum current per phase of vehicle"
+         },
+         "ev_max_power": {
+            "name": "Maximum charging power of vehicle"
+         },
+         "ev_required_energy": {
+            "name": "Reuqired energy of vehicle"
+         },
+         "l1_active_power": {
+            "name": "Active power phase L1"
+         },
+         "l1_current": {
+            "name": "Active current phase L1"
+         },
+         "l1_ln_voltage": {
+            "name": "Active voltage phase L1-N"
+         },
+         "l1_phase": {
+            "name": "Real phase for L1"
+         },
+         "l2_active_power": {
+            "name": "Active power phase L2"
+         },
+         "l2_current": {
+            "name": "Active current phase L2"
+         },
+         "l2_ln_voltage": {
+            "name": "Active voltage phase L2-N"
+         },
+         "l2_phase": {
+            "name": "Real phase for L2"
+         },
+         "l3_active_power": {
+            "name": "Active power phase L3"
+         },
+         "l3_current": {
+            "name": "Active current phase L3"
+         },
+         "l3_ln_voltage": {
+            "name": "Active voltage phase L3-N"
+         },
+         "l3_phase": {
+            "name": "Real phase for L3"
+         },
+         "max_current": {
+            "name": "Max current"
+         },
+         "net_frequency": {
+            "name": "Net frequency"
+         },
+         "num_phases": {
+            "name": "Number of phases"
+         },
+         "power_factor": {
+            "name": "Power factor"
+         },
+         "session_departure_time": {
+            "name": "End time of current session"
+         },
+         "session_id": {
+            "name": "Session id"
+         },
+         "state": {
+            "name": "State"
+         },
+         "state_numeric": {
+            "name": "Numeric state"
+         },
+         "target_current": {
+            "name": "Target current"
+         },
+         "total_active_power": {
+            "name": "Total active power"
+         },
+         "type": {
+            "name": "Type"
+         },
+         "type_numeric": {
+            "name": "Numeric Type"
+         },
+         "vehicle_connected_phases": {
+            "name": "Number of phases connected to vehicle"
+         },
+         "vehicle_connected_phases_code": {
+            "name": "Number of phases connected to vehicle (code)"
+         },
+         "vehicle_connected_phases_numeric": {
+            "name": "Number of phases connected to vehicle (numeric)"
+         }
+      }
     }
 }

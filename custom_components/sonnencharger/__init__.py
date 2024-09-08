@@ -13,7 +13,7 @@ from homeassistant.config_entries import ConfigEntry
 
 async def async_setup_entry(hass: HomeAssistant, config_entry: ConfigEntry):
     # LOGGER.warning("setup_entry: "+json.dumps(dict(config_entry.data)))
-    await hass.async_create_task(hass.config_entries.async_forward_entry_setup(config_entry, Platform.SENSOR))
+    await hass.config_entries.async_forward_entry_setups(config_entry, [ Platform.SENSOR ])
     config_entry.add_update_listener(update_listener)
     return True
 

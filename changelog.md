@@ -1,4 +1,8 @@
 # ChangeLog
+### 24.09.08
+
++ Replace `async_forward_entry_setup` with `await async_forward_entry_setups`
++ Require homeassistant >= 2024.9.0
 
 ### 24.03.02
 

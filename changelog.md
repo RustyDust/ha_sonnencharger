@@ -1,4 +1,10 @@
 # ChangeLog
+### 24.12.01
+
++ Require `sonnencharger`>=0.1.3
+  - fixes icompatibility with pymodbus >= 3.7.4 when creating modbus client
++ Require homeassistant >= 2024.12.0
+
 ### 24.09.08
 
 + Replace `async_forward_entry_setup` with `await async_forward_entry_setups`

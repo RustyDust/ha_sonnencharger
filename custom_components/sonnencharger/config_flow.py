@@ -54,10 +54,6 @@ class SonnenchargerFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
       errors      = errors if errors else {},
     )
 
-  async def async_step_import(self, import_config):
-    """Import a config entry from configuration.yaml."""
-    return await self.async_step_user(import_config)
-
   @staticmethod
   @callback
   def async_get_options_flow(config_entry):

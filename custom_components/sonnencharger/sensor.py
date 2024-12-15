@@ -1,3 +1,4 @@
+import json
 import logging
 
 from .coordinator import SonnenChargerCoordinator
@@ -66,7 +67,6 @@ async def async_setup_entry(hass, config_entry, async_add_entities):
    )
 
    await coordinator.async_config_entry_first_refresh()
-   # LOGGER.warning(json.dumps(coordinator.latest_data))
 
    async_add_entities(
       SonnenChargerSensor(coordinator=coordinator, entity_description=description)
@@ -75,11 +75,14 @@ async def async_setup_entry(hass, config_entry, async_add_entities):
 
 def generate_sensors(_coordinator):
    sensor_list: list[SonnenChargerSensorEntityDescription] = []
-   prefix = "sensor.{}_{}".format(DOMAIN, _coordinator.latest_data["sysinfo"]["serial"])
+   prefix = f"sensor.{DOMAIN}_{_coordinator.latest_data["sysinfo"]["serial"]}"
  
    for skey in SENSORMAP["sysinfo"]:
-      sensor_key  = f"{prefix}_{skey}"
-      sensor_name = f"{skey}"
+      # This becomes the Entity ID
+      sensor_name = f"{prefix}_{skey}"
+      # This is the translation key
+      sensor_key  = f"{skey}"
+      LOGGER.warning(f"Sensor List: {sensor_key} {sensor_name}")
       sensor_list.append(
          SonnenChargerSensorEntityDescription(
             key=sensor_key,
@@ -94,10 +97,13 @@ def generate_sensors(_coordinator):
 
    num_connectors = _coordinator.latest_data["sysinfo"]["connectors"]
    for cur_conn in range(0, num_connectors):
-      prefix = "conn{}".format(cur_conn)
+      prefix = f"sensor.{DOMAIN}_{_coordinator.latest_data["sysinfo"]["serial"]}_conn{cur_conn}"
       for key in SENSORMAP["connectors"]:
-         sensor_key  = f"{prefix}_{key}"
-         sensor_name = f"{key}"
+         # This becomes the Entity ID
+         sensor_name = f"{prefix}_{key}"
+         # This is the translation key
+         sensor_key  = f"{key}"
+         LOGGER.warning(f"Sensor List: {sensor_key} {sensor_name}")
          sensor_list.append(
             SonnenChargerSensorEntityDescription(
                key=sensor_key,
@@ -115,6 +121,7 @@ def generate_sensors(_coordinator):
                value_fn=lambda coordinator, _conn=cur_conn, _index=key: coordinator.latest_data.get("connectors", {}).get(_conn, {}).get(_index, None)
             )
          )
+
 
    return sensor_list
 
